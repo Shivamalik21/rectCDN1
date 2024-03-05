@@ -1,0 +1,20 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.rootdiv h1{
+   
+    margin-top: 3vh;
+
+}
+ .rootdiv a{
+color: rgb(51, 128, 158);
+}
+.rootdiv a:hover{
+    cursor: pointer;
+    color: red;
+}

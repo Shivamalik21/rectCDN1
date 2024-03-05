@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-dom</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">Loading...</div>
+    <!-- Load Babel -->
+    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    
+    <!-- Your custom script here -->
+  <script  type="text/babel">
+    let pstyle={
+     width:"54vw",
+    margin: "2vw 0px"
+
+    }
+   const Element=()=>{
+    return (
+      <div style={{padding:" 0px 3vw"}}className="rootdiv">
+        <h1>Learn web development</h1>
+        < div style={pstyle}><p>Learn web development Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web development with all that they need to start coding websites. </p></div>
+       <div style={pstyle}><p> The aim of this area A MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable." From there, you should be able to start making your way, learning from <a href="https://google.com" >the rest of MDN</a>, and other intermediate to advanced resources that assume a lot of previous knowledge.</p></div>
+        <div style={pstyle}><p> If you are a complete beginner, web development can be challenging — we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. You should feel at home whether you are a student learning web development (on your own or as part of a class), a teacher looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.</p></div>
+       </div>
+       
+    );
+   }
+   ReactDOM.render(<Element/>,document.getElementById("root"))
+
+  </script>
+</body>
+</html>
